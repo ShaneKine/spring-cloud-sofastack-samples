@@ -12,97 +12,98 @@ import org.junit.runner.RunWith;
 import org.smartunit.runtime.SmartRunner;
 import org.smartunit.runtime.SmartRunnerParameters;
 
-@RunWith(SmartRunner.class) @SmartRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true) 
+@RunWith(SmartRunner.class)
+@SmartRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true)
 public class Result_SSTest extends Result_SSTest_scaffolding {
-// allCoveredLines:[7, 10, 14, 18, 19, 22, 26, 27, 30, 34, 35]
+    // allCoveredLines:[7, 10, 14, 18, 19, 22, 26, 27, 30, 34, 35]
 
-  @Test(timeout = 4000)
-  public void test_getData_0()  throws Throwable  {
-      //caseID:02a1a511428f851b0d9064b35f235255
-      //CoveredLines: [7, 10, 14]
-      //Assert: assertFalse(result0.isSuccess());
-      
-      Result<Object> result0 = new Result<Object>();
-      
-      //Call method: getData
-      result0.getData();
-      
-      //Test Result Assert
-      assertFalse(result0.isSuccess());
-  }
+    @Test(timeout = 4000)
+    public void test_getData_0() throws Throwable {
+        //caseID:02a1a511428f851b0d9064b35f235255
+        //CoveredLines: [7, 10, 14]
+        //Assert: assertFalse(result0.isSuccess());
 
-  @Test(timeout = 4000)
-  public void test_getErrorMsg_1()  throws Throwable  {
-      //caseID:ec125fd126b75512ec37ed99d9aeb5b5
-      //CoveredLines: [7, 10, 30]
-      //Assert: assertFalse(result0.isSuccess());
-      
-      Result<Integer> result0 = new Result<Integer>();
-      
-      //Call method: getErrorMsg
-      result0.getErrorMsg();
-      
-      //Test Result Assert
-      assertFalse(result0.isSuccess());
-  }
+        Result<Object> result0 = new Result<Object>();
 
-  @Test(timeout = 4000)
-  public void test_isSuccess_2()  throws Throwable  {
-      //caseID:f5591f59c529826f134a8df3a7db2051
-      //CoveredLines: [7, 10, 22]
-      //Assert: assertFalse(method_result);
-      
-      Result<String> result0 = new Result<String>();
-      
-      //Call method: isSuccess
-      boolean boolean0 = result0.isSuccess();
-      
-      //Test Result Assert
-      assertFalse(boolean0);
-  }
+        //Call method: getData
+        result0.getData();
 
-  @Test(timeout = 4000)
-  public void test_setData_3()  throws Throwable  {
-      //caseID:0fc5fe0b59f05af150aecb15af732e89
-      //CoveredLines: [7, 10, 18, 19]
-      //Input_0_String: y
-      
-      Result<String> result0 = new Result<String>();
-      
-      //Call method: setData
-      result0.setData("y");
-      
-      //Test Result Assert
-      assertFalse(result0.isSuccess());
-  }
+        //Test Result Assert
+        assertFalse(result0.isSuccess());
+    }
 
-  @Test(timeout = 4000)
-  public void test_setErrorMsg_4()  throws Throwable  {
-      //caseID:c6780a9f28fcc21693496e17f1513feb
-      //CoveredLines: [7, 10, 34, 35]
-      //Input_0_String: 1.0
-      
-      Result<String> result0 = new Result<String>();
-      
-      //Call method: setErrorMsg
-      result0.setErrorMsg("1.0");
-      
-      //Test Result Assert
-      assertFalse(result0.isSuccess());
-  }
+    @Test(timeout = 4000)
+    public void test_getErrorMsg_1() throws Throwable {
+        //caseID:ec125fd126b75512ec37ed99d9aeb5b5
+        //CoveredLines: [7, 10, 30]
+        //Assert: assertFalse(result0.isSuccess());
 
-  @Test(timeout = 4000)
-  public void test_setSuccess_5()  throws Throwable  {
-      //caseID:f39991e3b07687683ff6b4a0da742764
-      //CoveredLines: [7, 10, 26, 27]
-      //Input_0_boolean: false
-      
-      Result<Object> result0 = new Result<Object>();
-      
-      //Call method: setSuccess
-      result0.setSuccess(false);
-      
-      //Test Result Assert
-      assertFalse(result0.isSuccess());
-  }
+        Result<Integer> result0 = new Result<Integer>();
+
+        //Call method: getErrorMsg
+        result0.getErrorMsg();
+
+        //Test Result Assert
+        assertFalse(result0.isSuccess());
+    }
+
+    @Test(timeout = 4000)
+    public void test_isSuccess_2() throws Throwable {
+        //caseID:f5591f59c529826f134a8df3a7db2051
+        //CoveredLines: [7, 10, 22]
+        //Assert: assertFalse(method_result);
+
+        Result<String> result0 = new Result<String>();
+
+        //Call method: isSuccess
+        boolean boolean0 = result0.isSuccess();
+
+        //Test Result Assert
+        assertFalse(boolean0);
+    }
+
+    @Test(timeout = 4000)
+    public void test_setData_3() throws Throwable {
+        //caseID:0fc5fe0b59f05af150aecb15af732e89
+        //CoveredLines: [7, 10, 18, 19]
+        //Input_0_String: y
+
+        Result<String> result0 = new Result<String>();
+
+        //Call method: setData
+        result0.setData("y");
+
+        //Test Result Assert
+        assertFalse(result0.isSuccess());
+    }
+
+    @Test(timeout = 4000)
+    public void test_setErrorMsg_4() throws Throwable {
+        //caseID:c6780a9f28fcc21693496e17f1513feb
+        //CoveredLines: [7, 10, 34, 35]
+        //Input_0_String: 1.0
+
+        Result<String> result0 = new Result<String>();
+
+        //Call method: setErrorMsg
+        result0.setErrorMsg("1.0");
+
+        //Test Result Assert
+        assertFalse(result0.isSuccess());
+    }
+
+    @Test(timeout = 4000)
+    public void test_setSuccess_5() throws Throwable {
+        //caseID:f39991e3b07687683ff6b4a0da742764
+        //CoveredLines: [7, 10, 26, 27]
+        //Input_0_boolean: false
+
+        Result<Object> result0 = new Result<Object>();
+
+        //Call method: setSuccess
+        result0.setSuccess(false);
+
+        //Test Result Assert
+        assertFalse(result0.isSuccess());
+    }
 }
